@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #002244, #003366);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            width: 800px;
+            background: #002244;
+            border-radius: 10px;
+            overflow: hidden;
+            color: white;
+        }
+        .left {
+            width: 40%;
+            background: #002244;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .right {
+            width: 60%;
+            padding: 30px;
+        }
+        h2 {
+            text-align: center;
+            color:white;
+        }
+        .accept{
+            width: auto;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #2f6295;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .social {
+            display: flex;
+            justify-content: space-between;
+        }
+        .social button {
+            width: 48%;
+            background: #1877F2;
+        }
+        @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .left {
+        padding: 20px;
+    }
+    .right{
+        padding: 20px;
+    }
+    input {
+        flex-direction: column;
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Let's Make it Happen Together!</h1>
+        </div>
+        <div class="right">
+            <h2>Create An Account</h2>
+            <form>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Address" required>
+                <input type="password" placeholder="Create Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                Accept Terms & Conditions <input type="checkbox" class="accept" > 
+
+                <button type="submit">Sign Up</button>
+                <div class="social">
+                    <button>Sign up with Google</button>
+                    <button>Sign up with Twitter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
